@@ -1,3 +1,16 @@
+'''
+This Python module is for conducting trophic analysis as introduced by MacKay, Johnson and Sansom in [2], on gene regulatory networks.
+The code below makes use of the adapted trophic_tools [2], and was written by Sarah Andrews for [1]
+
+If you make use of code provided here please site [1] and [2].
+
+Refs:
+ [1] Andrews (2025), "Exploring Trophic Analysis for Directed Biological Networks"
+ [2] MacKay, Johnson & Sansom (2020), "How directed is a directed network", Royal Society Open Science
+
+From: Sarah Andrews
+'''
+
 ################################
 ###                          ###
 ###          IMPORTS         ###
@@ -699,4 +712,5 @@ correlation(
     ylab="Node Imbalance",
     xlab="Trophic Level"
 )
+
 
