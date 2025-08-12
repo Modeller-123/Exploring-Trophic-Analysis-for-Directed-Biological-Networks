@@ -1,6 +1,6 @@
 '''
 This Python module is for conducting trophic analysis as introduced by MacKay, Johnson and Sansom in [2], on gene regulatory networks.
-The code below makes use of the adapted trophic_tools [2], and was written by Sarah Andrews for [1]
+The code below makes use of the adapted "trophic_tools" [1, 2], and was written by Sarah Andrews for [1].
 
 If you make use of code provided here please site [1] and [2].
 
@@ -712,5 +712,6 @@ correlation(
     ylab="Node Imbalance",
     xlab="Trophic Level"
 )
+
 
 
