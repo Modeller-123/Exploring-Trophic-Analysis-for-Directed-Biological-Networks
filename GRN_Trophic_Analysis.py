@@ -1,3 +1,9 @@
+################################
+###                          ###
+###          IMPORTS         ###
+###                          ###
+################################
+
 import csv
 import networkx as nx
 from Tools import trophic_tools as ta
@@ -10,6 +16,12 @@ import numpy as np
 import copy
 
 random.seed(1)
+
+################################
+###                          ###
+###        FUNCTIONS         ###
+###                          ###
+################################
 
 def make_full_network(net_name, print_info=False):
     '''
@@ -242,7 +254,7 @@ def correlation(set1, set2, colour="blue", ylab="", xlab="", title="", axis=None
 
 ###################################
 ###                             ###
-###  Single Diff Net Analysis   ###
+###  SINGLE DIFF NET ANALYSIS   ###
 ###                             ###
 ###################################
 
@@ -281,7 +293,7 @@ ranges_of_interest = [
 
 ###################################
 ###                             ###
-###     Histogram Analysis      ###
+###     HISTOGRAM ANALYSIS      ###
 ###                             ###
 ###################################
 
@@ -340,7 +352,7 @@ plt.show()
 
 ###################################
 ###                             ###
-###  Regulatory Node Analysis   ###
+###  REGULATORY NODE ANALYSIS   ###
 ###                             ###
 ###################################
 
@@ -383,7 +395,7 @@ plt.show()
 
 ###################################
 ###                             ###
-###     Common Gene Analysis    ###
+###     COMMON GENE ANALYSIS    ###
 ###                             ###
 ###################################
 
@@ -470,7 +482,7 @@ plt.show()
 
 ###################################
 ###                             ###
-###    Node Removal Analysis    ###
+###    NODE REMOVAL ANALYSIS    ###
 ###                             ###
 ###################################
 
@@ -554,7 +566,7 @@ plt.show()
 
 ###################################
 ###                             ###
-###  Single Full Net Analysis   ###
+###  SINGLE FULL NET ANALYSIS   ###
 ###                             ###
 ###################################
 
@@ -588,7 +600,7 @@ _, _, _ = trophic_analyse(
 
 ###################################
 ###                             ###
-###    All Full Net Analysis    ###
+###    ALL FULL NET ANALYSIS    ###
 ###                             ###
 ###################################
 
@@ -654,7 +666,7 @@ plt.show()
 
 ###################################
 ###                             ###
-###  Node Imbalance Correlation ###
+###  NODE IMBALANCE CORRELATION ###
 ###                             ###
 ###################################
 
@@ -687,3 +699,4 @@ correlation(
     ylab="Node Imbalance",
     xlab="Trophic Level"
 )
+
