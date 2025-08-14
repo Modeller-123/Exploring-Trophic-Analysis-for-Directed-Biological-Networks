@@ -6,8 +6,8 @@ particularly for displaying trophic levels and changes in coherence. The plot fo
 If you make use of code provided here please site [1] and [3].
 
 Functions included are:
-- single_trophic_measures : returns a list of single trophic properties (from one network), such as incoherence, trophic range, and trophic mean 
-- double_trophic_measures : returns a list of double trophic properties (for comparing two networks), such as level change and correlaton
+- mouse_subplots : create a figure containing smaller subplots of different functional connectivity networks (calls mouse_plot)
+- mouse_plot : creates a plot of a functional connectivity network
 
 Refs:
  [1] Andrews (2025), "Exploring Trophic Analysis for Directed Biological Networks"
@@ -297,3 +297,4 @@ def mouse_plot(network,
         subplot.set_ylim([-2.5,4.7])
         if title != None:
             subplot.set_title(title)
+
