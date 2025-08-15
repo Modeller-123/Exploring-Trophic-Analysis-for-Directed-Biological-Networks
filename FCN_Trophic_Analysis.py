@@ -3,7 +3,7 @@ This Python module is for conducting trophic analysis as introduced by MacKay, J
 The code below makes use of the adapted "trophic_tools" [1, 2], and was written by Sarah Andrews for [1]. Many plots were displayed using
 "mouse_plot" [1, 3].
 
-If you make use of code provided here please site [1], [2], and [3].
+If you make use of code provided here please site [1] and [2].
 
 Refs:
  [1] Andrews (2025), "Exploring Trophic Analysis for Directed Biological Networks"
@@ -873,6 +873,7 @@ for net_type in net_types:
 
 correlation(all_incoherences,all_normalities,colour="red",size=15,xlab="Trophic Incoherence",
             ylab="Normality",title="The Correlation Between Trophic Coherence and Normality: ")
+
 
 
 
