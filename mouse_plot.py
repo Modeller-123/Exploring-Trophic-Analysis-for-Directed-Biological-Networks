@@ -3,7 +3,7 @@ This Python module is for creating plots of 30-node functional connectivity netw
 The code can be used to display multiple network properties at once and highlight nodes of interest. It is used directly for some of the figures seen in [1],
 particularly for displaying trophic levels and changes in coherence. The plot format was inspired by Slowinski et al [3].
 
-If you make use of code provided here please site [1] and [3].
+If you make use of code provided here please site [1].
 
 Functions included are:
 - mouse_subplots : create a figure containing smaller subplots of different functional connectivity networks (calls mouse_plot)
@@ -297,5 +297,6 @@ def mouse_plot(network,
         subplot.set_ylim([-2.5,4.7])
         if title != None:
             subplot.set_title(title)
+
 
 
