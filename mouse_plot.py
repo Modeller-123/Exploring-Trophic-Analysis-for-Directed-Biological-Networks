@@ -113,9 +113,9 @@ def mouse_subplots(networks,
     # Set figure size depending on existance of titles
     if sub_titles == None:
         sub_titles = [[None]*plot_layout[1]]*plot_layout[0]
-        fig, axs = plt.subplots(plot_layout[0],plot_layout[1],figsize=(plot_layout[1]*3-1,plot_layout[0]*2+1))
+        fig, axs = plt.subplots(plot_layout[0],plot_layout[1],figsize=(plot_layout[1]*3-1.5,plot_layout[0]*2+1))
     else:
-        fig, axs = plt.subplots(plot_layout[0],plot_layout[1],figsize=(plot_layout[1]*3,plot_layout[0]*2+1.5))
+        fig, axs = plt.subplots(plot_layout[0],plot_layout[1],figsize=(plot_layout[1]*3-1,plot_layout[0]*2+1.5))
 
     if highlight_nodes == None:
         highlight_nodes = [[None]*plot_layout[1]]*plot_layout[0]
@@ -297,4 +297,5 @@ def mouse_plot(network,
         subplot.set_ylim([-2.5,4.7])
         if title != None:
             subplot.set_title(title)
+
 
